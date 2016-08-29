@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3014677E-B37B-4B00-83EF-B471D98A57EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StudentDataBaseWinApp</RootNamespace>
+    <AssemblyName>StudentDataBaseWinApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enteties\BaseEntety.cs" />
+    <Compile Include="Enteties\Comment.cs" />
+    <Compile Include="Enteties\GraduateStudent.cs" />
+    <Compile Include="Enteties\Mark.cs" />
+    <Compile Include="Enteties\MyMessage.cs" />
+    <Compile Include="Enteties\Profil.cs" />
+    <Compile Include="Enteties\Student.cs" />
+    <Compile Include="Enteties\User.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repo\BaseRepo.cs" />
+    <Compile Include="Repo\CommentRepo.cs" />
+    <Compile Include="Repo\GraduatedRepo.cs" />
+    <Compile Include="Repo\MarkRepo.cs" />
+    <Compile Include="Repo\MessageRepo.cs" />
+    <Compile Include="Repo\ProfileRepo.cs" />
+    <Compile Include="Repo\StudentRepo.cs" />
+    <Compile Include="Repo\UserRepo.cs" />
+    <Compile Include="view\AddComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\AddComment.Designer.cs">
+      <DependentUpon>AddComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\AddMark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\AddMark.Designer.cs">
+      <DependentUpon>AddMark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\AddMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\AddMessage.Designer.cs">
+      <DependentUpon>AddMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\AddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\AddStudent.Designer.cs">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\DeleteComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\DeleteComment.Designer.cs">
+      <DependentUpon>DeleteComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\DeleteMark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\DeleteMark.Designer.cs">
+      <DependentUpon>DeleteMark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\DeleteStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\DeleteStudent.Designer.cs">
+      <DependentUpon>DeleteStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\DeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\DeleteUser.Designer.cs">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\EditComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\EditComment.Designer.cs">
+      <DependentUpon>EditComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\EditMark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\EditMark.Designer.cs">
+      <DependentUpon>EditMark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\EditStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\EditStudent.Designer.cs">
+      <DependentUpon>EditStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\ListAllComments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\ListAllComments.Designer.cs">
+      <DependentUpon>ListAllComments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\ListAllMarks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\ListAllMarks.Designer.cs">
+      <DependentUpon>ListAllMarks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\ListAllStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\ListAllStudents.Designer.cs">
+      <DependentUpon>ListAllStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\ListAllUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\ListAllUsers.Designer.cs">
+      <DependentUpon>ListAllUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\MessageView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\MessageView.Designer.cs">
+      <DependentUpon>MessageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\StudentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\StudentInfo.Designer.cs">
+      <DependentUpon>StudentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\StudentView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\StudentView.Designer.cs">
+      <DependentUpon>StudentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\UserView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\UserView.Designer.cs">
+      <DependentUpon>UserView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\ViewMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\ViewMessage.Designer.cs">
+      <DependentUpon>ViewMessage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="view\AddComment.resx">
+      <DependentUpon>AddComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\AddMark.resx">
+      <DependentUpon>AddMark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\AddMessage.resx">
+      <DependentUpon>AddMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\AddStudent.resx">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\DeleteComment.resx">
+      <DependentUpon>DeleteComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\DeleteMark.resx">
+      <DependentUpon>DeleteMark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\DeleteStudent.resx">
+      <DependentUpon>DeleteStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\DeleteUser.resx">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\EditComment.resx">
+      <DependentUpon>EditComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\EditMark.resx">
+      <DependentUpon>EditMark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\EditStudent.resx">
+      <DependentUpon>EditStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\ListAllComments.resx">
+      <DependentUpon>ListAllComments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\ListAllMarks.resx">
+      <DependentUpon>ListAllMarks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\ListAllStudents.resx">
+      <DependentUpon>ListAllStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\ListAllUsers.resx">
+      <DependentUpon>ListAllUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\MessageView.resx">
+      <DependentUpon>MessageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\StudentInfo.resx">
+      <DependentUpon>StudentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\StudentView.resx">
+      <DependentUpon>StudentView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\UserView.resx">
+      <DependentUpon>UserView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\ViewMessage.resx">
+      <DependentUpon>ViewMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Students\default.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

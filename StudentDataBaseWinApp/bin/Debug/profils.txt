@@ -1,0 +1,9 @@
+1
+admin
+admin
+20
+Мъж
+ФМИ
+Програмиране
+admin@admin.com
+C:\Users\LALEV\Desktop\Back-End\StudentSystem-master\StudentDataBaseWinApp\bin\Debug\Profils\admin.jpg
