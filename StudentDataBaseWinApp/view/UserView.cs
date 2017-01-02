@@ -498,6 +498,7 @@ namespace StudentDataBaseWinApp.view
         private void commentsDeleteToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             DeleteComment deletecomment = new DeleteComment();
+            deletecomment.Validation(user);
             deletecomment.ShowDialog();
         }
     }

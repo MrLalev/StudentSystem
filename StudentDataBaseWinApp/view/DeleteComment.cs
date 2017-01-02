@@ -14,9 +14,15 @@ namespace StudentDataBaseWinApp.view
 {
     public partial class DeleteComment : Form
     {
+        User user;
         public DeleteComment()
         {
             InitializeComponent();
+        }
+
+        internal void Validation(User loggeduser)
+        {
+            user = loggeduser;
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
@@ -50,7 +56,10 @@ namespace StudentDataBaseWinApp.view
 
             foreach (Comment comment in comments)
             {
-                comboBoxID.Items.Add(comment.Id);
+                if (user.FullName == comment.User)
+                {
+                    comboBoxID.Items.Add(comment.Id);
+                }
             }
         }
 

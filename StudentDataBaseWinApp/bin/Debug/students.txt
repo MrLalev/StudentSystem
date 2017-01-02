@@ -4,7 +4,7 @@ Ime
 1111
 1
 2121212121
-C:\Users\LALEV\Desktop\Back-End\StudentSystem-master\StudentDataBaseWinApp\bin\Debug\Students\1121221212.jpg
+D:\Projects\StudentSystem\StudentDataBaseWinApp\bin\Debug\Students\1121221212.jpg
 мъж
 222@dassas.com
 0

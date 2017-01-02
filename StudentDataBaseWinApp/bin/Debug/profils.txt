@@ -6,4 +6,4 @@ admin
 ФМИ
 Програмиране
 admin@admin.com
-C:\Users\LALEV\Desktop\Back-End\StudentSystem-master\StudentDataBaseWinApp\bin\Debug\Profils\admin.jpg
+D:\Projects\StudentSystem\StudentDataBaseWinApp\bin\Debug\Profils\admin.jpg
